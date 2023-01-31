@@ -1,12 +1,12 @@
 import axios from "axios";
 
-type IpApiData = {
+export type IpApiData = {
   query: string;
   country: string;
   as: string;
 };
 
-type GetIpDataResponse = {
+export type GetIpDataResponse = {
   status: string;
   statusText: string;
   data: IpApiData[];
@@ -21,11 +21,11 @@ const getApiDataAxios = async (ipAddresses: string[]) => {
   );
 
   const requests = urls.map((url) => axios.get<GetIpDataResponse>(url));
+
   try {
     const apiResponse = await axios.all(requests);
     const apiData = apiResponse.map(({ data }) => {
       const { query, country, as } = data;
-
       return {
         id: query,
         country: country,
