@@ -20,7 +20,7 @@ git clone https://github.com/nata-kab/rp-5-iter.git
 and then:
 
 ```bash
-cd iterators-tasks
+cd rp-5-iter
 npm i
 ```
 
