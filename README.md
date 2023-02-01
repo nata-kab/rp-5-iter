@@ -14,7 +14,7 @@ Use Typescript and Jest tests.
 Clone the repo:
 
 ```bash
-git clone https://github.com/nata-kab/iterators-exercise-5.git
+git clone https://github.com/nata-kab/rp-5-iter.git
 ```
 
 and then:
